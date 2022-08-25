@@ -13,9 +13,10 @@ internal class Tela
         string[] a = new string[] { "A", "B", "C", "D", "E", "F", "G", "H" };
         for (int i = 0; i < tabuleiro.Linhas; i++)
         {
-            Console.Write(a[i] + "  ");
+            Console.Write($"{i + 1}" + "  ");
             for (int j = 0; j < tabuleiro.Colunas; j++)
             {
+                
                 if (tabuleiro.Peca(i, j) == null)
                     Console.Write("_ ");
                 else
@@ -27,7 +28,7 @@ internal class Tela
         Console.Write("   ");
         for (int j = 0; j < tabuleiro.Colunas; j++)
         {
-            Console.Write($"{j + 1}" + " ");
+            Console.Write(a[j] + " ");            
         }
         Console.WriteLine();
     }
