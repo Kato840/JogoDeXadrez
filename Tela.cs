@@ -16,11 +16,18 @@ internal class Tela
             Console.Write($"{i + 1}" + "  ");
             for (int j = 0; j < tabuleiro.Colunas; j++)
             {
-                
+
                 if (tabuleiro.Peca(i, j) == null)
-                    Console.Write("_ ");
+                {
+                    Console.Write("- ");
+                }
                 else
-                    Console.Write(tabuleiro.Peca(i, j) + " ");
+                {
+                    ImprimirPeca(tabuleiro.Peca(i, j));
+                    Console.Write(" ");
+                }
+
+
             }
             Console.WriteLine();
         }
@@ -31,5 +38,19 @@ internal class Tela
             Console.Write(a[j] + " ");            
         }
         Console.WriteLine();
+    }
+    public static void ImprimirPeca (Peca peca)
+    {
+        if (peca.Cor == Cor.Branca)
+        {
+            Console.Write(peca);
+        }
+        else
+        {
+            ConsoleColor aux = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(peca);
+            Console.ForegroundColor = aux;
+        }
     }
 }
