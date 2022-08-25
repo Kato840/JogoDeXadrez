@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace xadrezconsole
+namespace xadrezconsole;
+
+enum Cor
 {
-    enum Cor
-    {
-        Branca,
-        Preta,
-        Amarela,
-        Azul,
-        Vermelha,
-        Verde,
-        Laranja
-    }
+    Branca,
+    Preta,
+    Amarela,
+    Azul,
+    Vermelha,
+    Verde,
+    Laranja
 }

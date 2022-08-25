@@ -4,17 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace xadrezconsole
-{
-    internal class Posicao
-    {
-        public int Linha { get; set; }
-        public int Coluna { get; set; }
+namespace xadrezconsole;
 
-        public Posicao(int linha, int coluna)
-        {
-            Linha = linha;
-            Coluna = coluna;
-        }
+internal class Posicao
+{
+    public int Linha { get; set; }
+    public int Coluna { get; set; }
+
+    public Posicao(int linha, int coluna)
+    {
+        Linha = linha;
+        Coluna = coluna;
     }
 }
