@@ -27,7 +27,7 @@ internal class Tela
         Console.Write("   ");
         for (int j = 0; j < tabuleiro.Colunas; j++)
         {
-            Console.Write($"{j+1}"+" ");
+            Console.Write($"{j + 1}" + " ");
         }
         Console.WriteLine();
     }

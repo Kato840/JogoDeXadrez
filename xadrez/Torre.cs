@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace xadrezconsole
+namespace xadrezconsole;
+
+internal class Torre : Peca
 {
-    internal class Torre : Peca
+    public Torre(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro, cor)
     {
-        public Torre(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro, cor)
-        {
 
-        }
-
-        public override string ToString()
-        {
-            return "T";
-        }
     }
 
+    public override string ToString()
+    {
+        return "T";
+    }
 }
+
