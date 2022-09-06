@@ -39,6 +39,13 @@ internal class Tela
         }
         Console.WriteLine();
     }
+    public static PosicaoXadrez LerPosicaoXadrez()
+    {
+        string entrada = Console.ReadLine();
+        char coluna = entrada[0];
+        int linha = int.Parse(entrada[1] + "");
+        return new PosicaoXadrez(coluna, linha);
+    }
     public static void ImprimirPeca (Peca peca)
     {
         if (peca.Cor == Cor.Branca)

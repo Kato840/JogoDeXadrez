@@ -40,6 +40,17 @@ internal class Tabuleiro
         Pecas[posicao.Linha, posicao.Coluna] = peca;
         peca.Posicao = posicao;
     }
+    public Peca RetirarPeca(Posicao posicao)
+    {
+        if (Peca(posicao) == null)
+        {
+            return null;
+        }
+        Peca auxiliar = Peca(posicao);
+        auxiliar.Posicao = null;
+        Pecas[posicao.Linha, posicao.Coluna] = null;
+        return auxiliar;
+    }
 
     public bool PosicaoValida(Posicao posicao)
     {
